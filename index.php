@@ -36,6 +36,9 @@ foreach( $array as $line ):
     // rest der Tabelle
     $table .= ' <tr>';
 
+    // Wir fügen eine neue table data
+    $table .= '<td>' . $row . '</td>';
+
     $tds = explode( "\t", $line );
     foreach ( $tds as $td ):
       $table .= '<td>' . $td . '</td>';
