@@ -27,7 +27,7 @@ foreach( $array as $line ):
     endforeach;
 
     //neu ergänzt
-    $table .= '<th> ID' ;
+    $table .= '<th> ID</th>' ; // <tags> müssen immer geclosed werden </tags>
 
     $table .= ' </tr>';
 
