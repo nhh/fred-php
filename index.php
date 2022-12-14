@@ -21,13 +21,13 @@ foreach( $array as $line ):
     // nur die erste Zeile (th)
     $table .= ' <tr>';
 
+    //neu ergänzt
+    $table .= '<th> ID</th>' ; // <tags> müssen immer geclosed werden </tags>
+
     $ths = explode( "\t", $line );
     foreach ( $ths as $th ):
       $table .= '<th>' . $th . '</th>';
     endforeach;
-
-    //neu ergänzt
-    $table .= '<th> ID</th>' ; // <tags> müssen immer geclosed werden </tags>
 
     $table .= ' </tr>';
 
